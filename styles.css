@@ -1,0 +1,420 @@
+/* Style de base pour la section */
+#equipe {
+    background: linear-gradient(135deg, #f5f5f5, #ffffff);
+    padding: 5rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la section */
+#equipe h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#equipe h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #007bff;
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+/* Cartes des professeurs */
+#equipe .col-lg-4 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#equipe .col-lg-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#equipe img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid #007bff;
+    transition: border-color 0.3s ease;
+}
+
+#equipe img:hover {
+    border-color: #0056b3;
+}
+
+#equipe h5 {
+    font-size: 1.25rem;
+    color: #007bff;
+    margin: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+#equipe h5:hover {
+    color: #0056b3;
+}
+
+#equipe p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Animation d'apparition */
+#equipe .col-lg-4 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+#equipe #prof1 {
+    animation-delay: 0.2s;
+}
+
+#equipe #prof2 {
+    animation-delay: 0.4s;
+}
+
+#equipe #prof3 {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Style de base pour la section témoignages */
+#temoignages {
+    background: linear-gradient(135deg, #e9ecef, #ffffff);
+    padding: 5rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la section */
+#temoignages h2 {
+    font-size: 2.5rem;
+    color: #343a40;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#temoignages h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #007bff;
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+/* Style des cartes de témoignages */
+#temoignages .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#temoignages .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#temoignages .card-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #495057;
+    line-height: 1.6;
+}
+
+/* Animation d'apparition */
+#temoignages .col-md-6 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+#temoignages .col-md-6:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+#temoignages .col-md-6:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Style de base pour la section contact */
+#contact {
+    background: linear-gradient(135deg, #ffffff, #f7f9fc);
+    padding: 5rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la section contact */
+#contact h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#contact h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #007bff;
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+/* Style pour le formulaire */
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact .form-label {
+    font-weight: bold;
+    color: #555;
+}
+
+#contact .form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+#contact button {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #007bff;
+    color: #fff;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact button:hover {
+    background: #0056b3;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation d'apparition */
+#contact form {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Style de base pour la section formations */
+#formations {
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    padding: 5rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la section formations */
+#formations h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#formations h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #007bff;
+    margin: 1rem auto 0;
+    border-radius: 2px;
+}
+
+/* Style des cartes */
+#formations .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+#formations .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Images des cartes */
+#formations .card-img-top {
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#formations .card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Corps des cartes */
+#formations .card-body {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#formations .card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+#formations .card-title:hover {
+    color: #0056b3;
+}
+
+#formations .card-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Animation d'apparition */
+#formations .col-lg-4 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+#formations .col-lg-4:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+#formations .col-lg-4:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+#formations .col-lg-4:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Style de base pour le header */
+#accueil {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Effet d'overlay pour rendre le texte lisible */
+#accueil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Couche sombre */
+    z-index: 1;
+}
+
+/* Texte dans le header */
+#accueil .container {
+    position: relative;
+    z-index: 2; /* Placer le texte au-dessus de l'overlay */
+}
+
+#accueil h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#accueil p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Bouton d'appel à l'action */
+#accueil a.btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#accueil a.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+#navbar .navbar-nav .nav-link {
+    color: white !important;
+}
+
+#navbar .navbar-brand {
+    color: white !important;
+}

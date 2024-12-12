@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>École Privée Tambaoura</title>
+  <link rel="icon" href="school-icon.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">École Privée Tambaoura</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formations">Formations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#equipe">Équipe</a></li>
+          <li class="nav-item"><a class="nav-link" href="#temoignages">Témoignages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="accueil" class="text-center text-white py-5" style="background-image: url('bg.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+      <h1 class="display-4">Bienvenue à l'École Privée Tambaoura</h1>
+      <p class="lead">Une éducation de qualité pour un avenir brillant</p>
+      <a href="#formations" class="btn btn-primary btn-lg mt-3">Découvrir nos formations</a>
+    </div>
+</header>
+
+  
+
+  <!-- SECTION FORMATIONS -->
+  <section id="formations" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Nos Formations</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="primaire.jpg" class="card-img-top" alt="Formation Primaire">
+            <div class="card-body">
+              <h5 class="card-title">Formation Primaire</h5>
+              <p class="card-text">Une base solide pour développer les compétences fondamentales.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="secondaire.jpg" class="card-img-top" alt="Formation Secondaire">
+            <div class="card-body">
+              <h5 class="card-title">Formation Secondaire</h5>
+              <p class="card-text">Préparation à l'avenir avec des programmes enrichis et diversifiés.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card shadow-sm">
+            <img src="jardin.jpg" class="card-img-top" alt="Formation Supérieure">
+            <div class="card-body">
+              <h5 class="card-title">Jardin d'enfants</h5>
+              <p class="card-text">Préparer les enfants pour la primaire.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION ÉQUIPE -->
+  <section id="equipe" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Notre Équipe Pédagogique</h2>
+      <div class="row text-center">
+        <div class="col-lg-4 col-md-6 mb-4" id="prof1">
+          <img src="profq.jpg" class="rounded-circle mb-3" alt="Professeur 1">
+          <h5>Professeur Amina Diarra</h5>
+          <p class="text-muted">Spécialiste en Sciences</p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4" id="prof2">
+          <img src="profq.jpg" class="rounded-circle mb-3" alt="Professeur 2">
+          <h5>M. Moussa Koné</h5>
+          <p class="text-muted">Expert en Mathématiques</p>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4" id="prof3">
+          <img src="profq.jpg" class="rounded-circle mb-3" alt="Professeur 3">
+          <h5>Dr. Fatoumata Traoré</h5>
+          <p class="text-muted">Conseillère pédagogique</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION TÉMOIGNAGES -->
+  <section id="temoignages" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Ce que disent nos étudiants</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card p-3 shadow-sm">
+            <p class="card-text">"L'École Privée Tambaoura m'a donné les outils nécessaires pour réussir ma carrière." - Aïcha S.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card p-3 shadow-sm">
+            <p class="card-text">"Les enseignants sont vraiment impliqués dans notre réussite." - Mamadou K.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT -->
+  <section id="contact" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Contactez-nous</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="name" placeholder="Votre nom">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Votre email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Votre message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-primary text-white text-center py-3 ">
+    <p>&copy; 2024 École Privée Tambaoura. Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
